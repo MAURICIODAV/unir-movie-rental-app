@@ -71,8 +71,7 @@ function PurchaseList() {
                     <button
                       className="purchase-list__qty-btn"
                       onClick={() => handleQuantity(movie.id, 1)}
-                    >
-                      +
+                    >+
                     </button>
                   </div>
                   <p className="purchase-list__price">

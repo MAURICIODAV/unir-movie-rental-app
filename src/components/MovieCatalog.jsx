@@ -31,7 +31,7 @@ function MovieCatalog() {
   const handleRent = (movie) => {
     const current = JSON.parse(localStorage.getItem("rentals") || "[]");
     if (!current.find((m) => m.id === movie.id)) {
-      current.push(movie);
+      current.push({ ...movie, rentalStart: new Date().toISOString() });
       localStorage.setItem("rentals", JSON.stringify(current));
       alert(`Has alquilado "${movie.title}"`);
     } else {
@@ -39,7 +39,7 @@ function MovieCatalog() {
     }
   };
 
-  // Añade esta función dentro del componente
+  
   const handleBuy = (movie) => {
     const current = JSON.parse(localStorage.getItem("cart") || "[]");
     if (!current.find((m) => m.id === movie.id)) {
