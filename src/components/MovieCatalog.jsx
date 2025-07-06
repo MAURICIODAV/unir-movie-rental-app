@@ -5,7 +5,7 @@ function MovieCatalog() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    fetch("/src/data/movies.json")
+    fetch("/movies.json")
       .then((res) => res.json())
       .then((data) => setMovies(data));
   }, []);
