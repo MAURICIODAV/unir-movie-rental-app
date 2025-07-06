@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Inception",
+    "director": "Christopher Nolan",
+    "year": 2010,
+    "synopsis": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+    "duration": 148,
+    "image": "https://image.tmdb.org/t/p/w500/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg",
+    "trailerId": "8hP9D6kZseM"
+  },
+  {
+    "id": 2,
+    "title": "Interstellar",
+    "director": "Christopher Nolan",
+    "year": 2014,
+    "synopsis": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+    "duration": 169,
+    "image": "https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
+    "trailerId": "zSWdZVtXT7E"
+  }
+]
