@@ -39,6 +39,18 @@ function MovieCatalog() {
     }
   };
 
+  // Añade esta función dentro del componente
+  const handleBuy = (movie) => {
+    const current = JSON.parse(localStorage.getItem("cart") || "[]");
+    if (!current.find((m) => m.id === movie.id)) {
+      current.push({ ...movie, quantity: 1, price: 5 }); // Ejemplo: cada película cuesta 5
+      localStorage.setItem("cart", JSON.stringify(current));
+      alert(`Has añadido "${movie.title}" al carrito de compras`);
+    } else {
+      alert(`"${movie.title}" ya está en el carrito`);
+    }
+  };
+
   return (
     <main className="movie-catalog">
       <h2 className="movie-catalog__title">Catálogo de Películas</h2>
@@ -62,6 +74,12 @@ function MovieCatalog() {
               onClick={() => handleRent(movie)}
             >
               Alquilar
+            </button>
+            <button
+              className="movie-catalog__buy-btn"
+              onClick={() => handleBuy(movie)}
+            >
+              Comprar
             </button>
           </div>
         ))}

@@ -76,3 +76,19 @@
 .movie-catalog__rent-btn:hover {
   background: #125ea2;
 }
+
+.movie-catalog__buy-btn {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #ffb200;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.movie-catalog__buy-btn:hover {
+  background: #c97a00;
+}
