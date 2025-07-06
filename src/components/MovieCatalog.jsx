@@ -28,6 +28,17 @@ function MovieCatalog() {
     );
   }, [search, movies]);
 
+  const handleRent = (movie) => {
+    const current = JSON.parse(localStorage.getItem("rentals") || "[]");
+    if (!current.find((m) => m.id === movie.id)) {
+      current.push(movie);
+      localStorage.setItem("rentals", JSON.stringify(current));
+      alert(`Has alquilado "${movie.title}"`);
+    } else {
+      alert(`Ya has alquilado "${movie.title}"`);
+    }
+  };
+
   return (
     <main className="movie-catalog">
       <h2 className="movie-catalog__title">Catálogo de Películas</h2>
@@ -46,6 +57,12 @@ function MovieCatalog() {
               {movie.director} ({movie.year})
             </p>
             <p className="movie-catalog__synopsis">{movie.synopsis}</p>
+            <button
+              className="movie-catalog__rent-btn"
+              onClick={() => handleRent(movie)}
+            >
+              Alquilar
+            </button>
           </div>
         ))}
       </div>

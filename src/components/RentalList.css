@@ -1,0 +1,51 @@
+.rental-list {
+  padding: 2rem;
+  background: #f5f5f5;
+}
+
+.rental-list__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.rental-list__empty {
+  text-align: center;
+  color: #888;
+}
+
+.rental-list__movies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.rental-list__card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1rem;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rental-list__image {
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.rental-list__info {
+  text-align: center;
+}
+
+.rental-list__movie-title {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.rental-list__director {
+  color: #666;
+  font-size: 0.95rem;
+}
