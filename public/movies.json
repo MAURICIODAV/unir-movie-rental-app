@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "title": "Inception",
+    "title": "Origen",
     "director": "Christopher Nolan",
     "year": 2010,
-    "synopsis": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+    "synopsis": "Un ladrón que roba secretos corporativos a través del uso de la tecnología de compartir sueños recibe la tarea inversa de plantar una idea en la mente de un CEO.",
     "duration": 148,
-    "image": "https://image.tmdb.org/t/p/w500/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg",
+    "image": "https://image.tmdb.org/t/p/w500/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg",
     "trailerId": "8hP9D6kZseM"
   },
   {
@@ -14,9 +14,179 @@
     "title": "Interstellar",
     "director": "Christopher Nolan",
     "year": 2014,
-    "synopsis": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+    "synopsis": "Un grupo de exploradores viaja a través de un agujero de gusano en el espacio en un intento de asegurar la supervivencia de la humanidad.",
     "duration": 169,
     "image": "https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
     "trailerId": "zSWdZVtXT7E"
+  },
+  {
+    "id": 3,
+    "title": "El Padrino",
+    "director": "Francis Ford Coppola",
+    "year": 1972,
+    "synopsis": "El patriarca de una dinastía criminal traslada el control de su imperio clandestino a su hijo reacio.",
+    "duration": 175,
+    "image": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+    "trailerId": "sY1S34973zA"
+  },
+  {
+    "id": 4,
+    "title": "Pulp Fiction",
+    "director": "Quentin Tarantino",
+    "year": 1994,
+    "synopsis": "Las vidas de dos sicarios, una esposa de gánster, un boxeador y dos bandidos se entrelazan en cuatro relatos de violencia y redención.",
+    "duration": 154,
+    "image": "https://image.tmdb.org/t/p/w500/plnlrtBUULT0rh3Xsjmpubiso3L.jpg",
+    "trailerId": "s7EdQ4FqbhY"
+  },
+  {
+    "id": 5,
+    "title": "La lista de Schindler",
+    "director": "Steven Spielberg",
+    "year": 1993,
+    "synopsis": "En la Polonia ocupada por los nazis durante la Segunda Guerra Mundial, Oskar Schindler gradualmente se preocupa por su fuerza laboral judía después de presenciar su persecución por los nazis.",
+    "duration": 195,
+    "image": "https://image.tmdb.org/t/p/w500/c8Ass7acuOe4za6DhSattE359gr.jpg",
+    "trailerId": "gG22XNhtnoY"
+  },
+  {
+    "id": 6,
+    "title": "Forrest Gump",
+    "director": "Robert Zemeckis",
+    "year": 1994,
+    "synopsis": "Las presidencias de Kennedy y Johnson, la guerra de Vietnam, Watergate y otros eventos históricos se desarrollan a través de la perspectiva de un hombre de Alabama con un coeficiente intelectual bajo.",
+    "duration": 142,
+    "image": "https://image.tmdb.org/t/p/w500/saHP97rTPS5eLmrLQEcANmKrsFl.jpg",
+    "trailerId": "bLvqoHBptjg"
+  },
+  {
+    "id": 7,
+    "title": "El Señor de los Anillos: El Retorno del Rey",
+    "director": "Peter Jackson",
+    "year": 2003,
+    "synopsis": "Gandalf y Aragorn lideran el Mundo de los Hombres contra el ejército de Sauron para distraerlo mientras Frodo y Sam se acercan al Monte del Destino con el Anillo Único.",
+    "duration": 201,
+    "image": "https://image.tmdb.org/t/p/w500/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+    "trailerId": "r5X-hFf6Bwo"
+  },
+  {
+    "id": 8,
+    "title": "Gladiador",
+    "director": "Ridley Scott",
+    "year": 2000,
+    "synopsis": "Un general romano es traicionado y su familia asesinada por un emperador corrupto. Llega a Roma como gladiador para vengar la muerte de sus seres queridos.",
+    "duration": 155,
+    "image": "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
+    "trailerId": "owK1qxDselE"
+  },
+  {
+    "id": 9,
+    "title": "Titanic",
+    "director": "James Cameron",
+    "year": 1997,
+    "synopsis": "Una joven aristócrata se enamora de un artista pobre a bordo del lujoso e infortunado RMS Titanic.",
+    "duration": 195,
+    "image": "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
+    "trailerId": "2e-eXJ6HgkQ"
+  },
+  {
+    "id": 10,
+    "title": "Matrix",
+    "director": "Lana Wachowski, Lilly Wachowski",
+    "year": 1999,
+    "synopsis": "Un hacker descubre la verdadera naturaleza de su realidad y su papel en la guerra contra sus controladores.",
+    "duration": 136,
+    "image": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+    "trailerId": "vKQi3bBA1y8"
+  },
+  {
+    "id": 11,
+    "title": "El Rey León",
+    "director": "Roger Allers, Rob Minkoff",
+    "year": 1994,
+    "synopsis": "Un joven león debe aceptar su papel como el legítimo rey de su tierra natal tras el asesinato de su padre.",
+    "duration": 88,
+    "image": "https://image.tmdb.org/t/p/w500/2CAL2433ZeIihfX1Hb2139CX0pW.jpg",
+    "trailerId": "4sj1MT05lAA"
+  },
+  {
+    "id": 12,
+    "title": "Avatar",
+    "director": "James Cameron",
+    "year": 2009,
+    "synopsis": "Un marine parapléjico es enviado a la luna Pandora en una misión única, pero se debate entre seguir órdenes y proteger el mundo que siente como su hogar.",
+    "duration": 162,
+    "image": "https://image.tmdb.org/t/p/w500/keIxh0wPr2Ymj0Btjh4gW7JJ89e.jpg",
+    "trailerId": "5PSNL1qE6VY"
+  },
+  {
+    "id": 13,
+    "title": "Coco",
+    "director": "Lee Unkrich, Adrian Molina",
+    "year": 2017,
+    "synopsis": "Un joven aspirante a músico se embarca en un viaje al Mundo de los Muertos para descubrir la verdadera historia de su familia.",
+    "duration": 105,
+    "image": "https://image.tmdb.org/t/p/w500/gGEsBPAijhVUFoiNpgZXqRVWJt2.jpg",
+    "trailerId": "Ga6RYejo6Hk"
+  },
+  {
+    "id": 14,
+    "title": "Toy Story",
+    "director": "John Lasseter",
+    "year": 1995,
+    "synopsis": "Un vaquero de juguete se siente amenazado y celoso cuando un nuevo astronauta de juguete entra en la vida de su dueño.",
+    "duration": 81,
+    "image": "https://image.tmdb.org/t/p/w500/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg",
+    "trailerId": "KYz2wyBy3kc"
+  },
+  {
+    "id": 15,
+    "title": "Jurassic Park",
+    "director": "Steven Spielberg",
+    "year": 1993,
+    "synopsis": "Un parque temático sufre un desastre cuando los dinosaurios clonados escapan de sus recintos.",
+    "duration": 127,
+    "image": "https://image.tmdb.org/t/p/w500/9i3plLl89DHMz7mahksDaAo7HIS.jpg",
+    "trailerId": "lc0UehYemQA"
+  },
+  {
+    "id": 16,
+    "title": "Star Wars: Episodio IV - Una Nueva Esperanza",
+    "director": "George Lucas",
+    "year": 1977,
+    "synopsis": "Luke Skywalker se une a un caballero Jedi, un piloto arrogante, un wookiee y dos droides para salvar la galaxia del arma destructiva del Imperio.",
+    "duration": 121,
+    "image": "https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
+    "trailerId": "vZ734NWnAHA"
+  },
+  {
+    "id": 17,
+    "title": "Avengers: Endgame",
+    "director": "Anthony Russo, Joe Russo",
+    "year": 2019,
+    "synopsis": "Después de los eventos devastadores de Infinity War, los Vengadores restantes deben reunir fuerzas para deshacer las acciones de Thanos.",
+    "duration": 181,
+    "image": "https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg",
+    "trailerId": "TcMBFSGVi1c"
+  },
+  {
+    "id": 18,
+    "title": "La La Land",
+    "director": "Damien Chazelle",
+    "year": 2016,
+    "synopsis": "Mientras persiguen sus sueños en Los Ángeles, una aspirante a actriz y un músico de jazz se enamoran, pero sus ambiciones amenazan con separarlos.",
+    "duration": 128,
+    "image": "https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+    "trailerId": "0pdqf4P9MB8"
+  },
+  {
+    "id": 19,
+    "title": "El viaje de Chihiro",
+    "director": "Hayao Miyazaki",
+    "year": 2001,
+    "synopsis": "Una niña de diez años debe navegar por un mundo de espíritus y dioses para salvar a sus padres, quienes han sido transformados en cerdos.",
+    "duration": 125,
+    "image": "https://image.tmdb.org/t/p/w500/oRvMaJOmapypFUcQqpgHMZA6qL9.jpg",
+    "trailerId": "ByXuk9QqQkk"
   }
 ]
