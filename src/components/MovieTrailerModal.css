@@ -1,0 +1,31 @@
+.trailer-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.trailer-modal__overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+}
+.trailer-modal__content {
+  position: relative;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  z-index: 1001;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+.trailer-modal__close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.7rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #1746a2;
+  cursor: pointer;
+}

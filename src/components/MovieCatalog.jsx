@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
 import "./MovieCatalog.css";
 import SearchBar from "./SearchBar";
+import MovieTrailerModal from "./MovieTrailerModal";
 
 function MovieCatalog() {
   const [movies, setMovies] = useState([]);
   const [filtered, setFiltered] = useState([]);
   const [search, setSearch] = useState("");
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedTrailer, setSelectedTrailer] = useState(null);
 
   useEffect(() => {
     fetch("/movies.json")
@@ -81,9 +84,23 @@ function MovieCatalog() {
             >
               Comprar
             </button>
+            <button
+              className="movie-catalog__trailer-btn"
+              onClick={() => {
+                setSelectedTrailer(movie.trailerId);
+                setModalOpen(true);
+              }}
+            >
+              Ver tráiler
+            </button>
           </div>
         ))}
       </div>
+      <MovieTrailerModal
+        trailerId={selectedTrailer}
+        open={modalOpen}
+        onClose={() => setModalOpen(false)}
+      />
     </main>
   );
 }

@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header className="header">
-      <h1>Plataforma de Streaming</h1>
+      <h1>Tienda on line de peliculas</h1>
       <nav>
         <a href="/">Catálogo</a> |{" "}
         <a href="/rentals">Alquileres</a> |{" "}
