@@ -18,8 +18,7 @@ function App() {
         <Route path="/" element={<MovieCatalog />} />
         <Route path="/movie/:id" element={<MovieDetail />} />
         <Route path="/rentals" element={<RentalList />} />
-        <Route path="/purchases" element={<PurchaseList />} />
-        {/* ...otras rutas... */}
+        <Route path="/purchases" element={<PurchaseList />} />        
       </Routes>
       <Footer />
     </Router>
