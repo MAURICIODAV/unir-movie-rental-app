@@ -9,16 +9,20 @@ import MovieCatalog from './components/MovieCatalog';
 import MovieDetail from './components/MovieDetail';
 import RentalList from './components/RentalList';
 import PurchaseList from './components/PurchaseList';
+import Contactenos from './components/Contactenos';
+import AboutUs from './components/AboutUs';
 
 function App() {
   return (
     <Router>
       <Header />
-      <Routes>
+      <Routes>        
         <Route path="/" element={<MovieCatalog />} />
         <Route path="/movie/:id" element={<MovieDetail />} />
         <Route path="/rentals" element={<RentalList />} />
-        <Route path="/purchases" element={<PurchaseList />} />        
+        <Route path="/purchases" element={<PurchaseList />} />
+        <Route path="/contacto" element={<Contactenos />} />        
+        <Route path="/abouts" element={<AboutUs />} />
       </Routes>
       <Footer />
     </Router>

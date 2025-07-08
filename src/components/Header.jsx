@@ -3,9 +3,11 @@ function Header() {
     <header className="header">
       <h1>Tienda on line de peliculas</h1>
       <nav>
+        <a href="/abouts">Acera de nosotros</a> |{" "}
         <a href="/">Catálogo</a> |{" "}
         <a href="/rentals">Alquileres</a> |{" "}
-        <a href="/purchases">Compras</a>
+        <a href="/purchases">Compras</a> |{" "}
+        <a href="/contacto">Contacto</a>
       </nav>
     </header>
   );

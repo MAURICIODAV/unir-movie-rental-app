@@ -1,0 +1,40 @@
+.aboutus {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.aboutus__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1746a2;
+}
+
+.aboutus__intro {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.aboutus__block {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.aboutus__subtitle {
+  color: #1976d2;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.aboutus__values {
+  list-style: disc inside;
+  margin: 0.5rem 0 0 1rem;
+  padding: 0;
+  color: #444;
+  font-size: 1.05rem;
+}

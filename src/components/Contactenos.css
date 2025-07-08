@@ -1,0 +1,36 @@
+.contactenos {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.contactenos__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1746a2;
+}
+
+.contactenos__info {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.contactenos__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contactenos__list li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.contactenos__list strong {
+  color: #1976d2;
+}
