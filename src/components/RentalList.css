@@ -1,11 +1,13 @@
 .rental-list {
   padding: 2rem;
   background: #f5f5f5;
+  min-height: 100vh;
 }
 
 .rental-list__title {
   text-align: center;
   margin-bottom: 2rem;
+  color: #3F3636;
 }
 
 .rental-list__empty {
@@ -51,7 +53,7 @@
 }
 
 .rental-list__remove-btn {
-  background: #e53935;
+  background: #B02121;
   color: #fff;
   border: none;
   border-radius: 4px;

@@ -26,13 +26,8 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  background: #F0EAE9;
+  color: #45322F;
 }
 
 button {
@@ -65,4 +60,45 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  background-color: #A88983;
+  color: #45322F;
+  padding: 0 1em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header__nav a {
+  color: #453430;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header__image {
+  width: 2em;
+  height: auto;
+}
+
+.footer {
+  text-align: center;
+  width: 100%;
 }

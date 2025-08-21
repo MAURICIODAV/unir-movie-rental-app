@@ -2,6 +2,13 @@ import { useEffect, useState } from "react";
 import "./MovieCatalog.css";
 import SearchBar from "./SearchBar";
 import MovieTrailerModal from "./MovieTrailerModal";
+import { toast } from "react-toastify";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTicket,
+  faFilm,
+  faCirclePlay,
+} from "@fortawesome/free-solid-svg-icons";
 
 function MovieCatalog() {
   const [movies, setMovies] = useState([]);
@@ -22,11 +29,12 @@ function MovieCatalog() {
   useEffect(() => {
     const lower = search.toLowerCase();
     setFiltered(
-      movies.filter((movie) =>
-        movie.title.toLowerCase().includes(lower) ||
-        movie.director.toLowerCase().includes(lower) ||
-        movie.year.toString().includes(lower) ||
-        (movie.synopsis && movie.synopsis.toLowerCase().includes(lower))        
+      movies.filter(
+        (movie) =>
+          movie.title.toLowerCase().includes(lower) ||
+          movie.director.toLowerCase().includes(lower) ||
+          movie.year.toString().includes(lower) ||
+          (movie.synopsis && movie.synopsis.toLowerCase().includes(lower))
       )
     );
   }, [search, movies]);
@@ -36,21 +44,20 @@ function MovieCatalog() {
     if (!current.find((m) => m.id === movie.id)) {
       current.push({ ...movie, rentalStart: new Date().toISOString() });
       localStorage.setItem("rentals", JSON.stringify(current));
-      alert(`Has alquilado "${movie.title}"`);
+      toast.success(`Has alquilado "${movie.title}"`);
     } else {
-      alert(`Ya has alquilado "${movie.title}"`);
+      toast.warning(`Ya has alquilado "${movie.title}"`);
     }
   };
 
-  
   const handleBuy = (movie) => {
     const current = JSON.parse(localStorage.getItem("cart") || "[]");
     if (!current.find((m) => m.id === movie.id)) {
       current.push({ ...movie, quantity: 1, price: 5 }); // Ejemplo: cada película cuesta 5
       localStorage.setItem("cart", JSON.stringify(current));
-      alert(`Has añadido "${movie.title}" al carrito de compras`);
+      toast.success(`Has añadido "${movie.title}" al carrito de compras`);
     } else {
-      alert(`"${movie.title}" ya está en el carrito`);
+      toast.warning(`"${movie.title}" ya está en el carrito`);
     }
   };
 
@@ -72,27 +79,32 @@ function MovieCatalog() {
               {movie.director} ({movie.year})
             </p>
             <p className="movie-catalog__synopsis">{movie.synopsis}</p>
-            <button
-              className="movie-catalog__rent-btn"
-              onClick={() => handleRent(movie)}
-            >
-              Alquilar
-            </button>
-            <button
-              className="movie-catalog__buy-btn"
-              onClick={() => handleBuy(movie)}
-            >
-              Comprar
-            </button>
-            <button
-              className="movie-catalog__trailer-btn"
-              onClick={() => {
-                setSelectedTrailer(movie.trailerId);
-                setModalOpen(true);
-              }}
-            >
-              Ver tráiler
-            </button>
+            <div className="movie-catalog__actions">
+              <button
+                className="movie-catalog__rent-btn"
+                onClick={() => handleRent(movie)}
+                title="Alquilar película"
+              >
+                <FontAwesomeIcon icon={faTicket} />
+              </button>
+              <button
+                className="movie-catalog__buy-btn"
+                onClick={() => handleBuy(movie)}
+                title="Comprar película"
+              >
+                <FontAwesomeIcon icon={faFilm} />
+              </button>
+              <button
+                className="movie-catalog__trailer-btn"
+                onClick={() => {
+                  setSelectedTrailer(movie.trailerId);
+                  setModalOpen(true);
+                }}
+                title="Ver tráiler"
+              >
+                <FontAwesomeIcon icon={faCirclePlay} />
+              </button>
+            </div>
           </div>
         ))}
       </div>

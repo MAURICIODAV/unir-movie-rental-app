@@ -11,6 +11,8 @@ import RentalList from './components/RentalList';
 import PurchaseList from './components/PurchaseList';
 import Contactenos from './components/Contactenos';
 import AboutUs from './components/AboutUs';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 
 function App() {
   return (
@@ -25,6 +27,18 @@ function App() {
         <Route path="/abouts" element={<AboutUs />} />
       </Routes>
       <Footer />
+      <ToastContainer 
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </Router>
   );
 }

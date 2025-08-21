@@ -11,7 +11,7 @@
 .contactenos__title {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #1746a2;
+  color: #3F3636;
 }
 
 .contactenos__info {
@@ -32,5 +32,9 @@
 }
 
 .contactenos__list strong {
-  color: #1976d2;
+  color: #3F3636;
+}
+
+.contactenos__icon {
+  font-size: .8em;
 }

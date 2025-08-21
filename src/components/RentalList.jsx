@@ -1,15 +1,19 @@
 import { useEffect, useState } from "react";
 import "./RentalList.css";
+import { toast } from "react-toastify";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
 const RENTAL_DURATION_HOURS = 48;
-const RENTAL_COST = 3; 
+const RENTAL_COST = 3;
 
 function RentalList() {
   const [rentals, setRentals] = useState([]);
 
   // Función para calcular el tiempo restante
   const getTimeLeft = (startTime) => {
-    const endTime = new Date(startTime).getTime() + RENTAL_DURATION_HOURS * 60 * 60 * 1000;
+    const endTime =
+      new Date(startTime).getTime() + RENTAL_DURATION_HOURS * 60 * 60 * 1000;
     const now = Date.now();
     const diff = endTime - now;
     if (diff <= 0) return null;
@@ -25,7 +29,9 @@ function RentalList() {
       let rentalsArr = JSON.parse(stored);
       // Filtrar los expirados
       rentalsArr = rentalsArr.filter((movie) => {
-        const endTime = new Date(movie.rentalStart).getTime() + RENTAL_DURATION_HOURS * 60 * 60 * 1000;
+        const endTime =
+          new Date(movie.rentalStart).getTime() +
+          RENTAL_DURATION_HOURS * 60 * 60 * 1000;
         return Date.now() < endTime;
       });
       setRentals(rentalsArr);
@@ -37,7 +43,9 @@ function RentalList() {
       if (stored) {
         let rentalsArr = JSON.parse(stored);
         rentalsArr = rentalsArr.filter((movie) => {
-          const endTime = new Date(movie.rentalStart).getTime() + RENTAL_DURATION_HOURS * 60 * 60 * 1000;
+          const endTime =
+            new Date(movie.rentalStart).getTime() +
+            RENTAL_DURATION_HOURS * 60 * 60 * 1000;
           return Date.now() < endTime;
         });
         setRentals(rentalsArr);
@@ -52,6 +60,7 @@ function RentalList() {
     const newRentals = rentals.filter((movie) => movie.id !== id);
     setRentals(newRentals);
     localStorage.setItem("rentals", JSON.stringify(newRentals));
+    toast.error("Producto eliminado del carrito");
   };
 
   // Calcular el total
@@ -80,9 +89,7 @@ function RentalList() {
                     <p className="rental-list__director">
                       {movie.director} ({movie.year})
                     </p>
-                    <p className="rental-list__cost">
-                      Costo: ${RENTAL_COST}
-                    </p>
+                    <p className="rental-list__cost">Costo: ${RENTAL_COST} USD</p>
                     <p className="rental-list__time">
                       {timeLeft
                         ? `Tiempo restante: ${timeLeft}`
@@ -91,8 +98,9 @@ function RentalList() {
                     <button
                       className="rental-list__remove-btn"
                       onClick={() => handleRemove(movie.id)}
+                      title="Eliminar alquiler"
                     >
-                      Quitar
+                      <FontAwesomeIcon icon={faTrashAlt} />
                     </button>
                   </div>
                 </div>
@@ -104,7 +112,7 @@ function RentalList() {
               <strong>Total de alquileres:</strong> {rentals.length}
             </p>
             <p>
-              <strong>Total a pagar:</strong> ${total}
+              <strong>Total a pagar:</strong> ${total} USD
             </p>
           </div>
         </>

@@ -1,6 +1,7 @@
 .movie-catalog {
   padding: 2rem;
   background: #f9f9f9;
+  min-height: 100vh;
 }
 
 .movie-catalog__title {
@@ -47,6 +48,24 @@
   color: #333;
   text-align: center;
 }
+.search-bar__input {
+    width: 60%;
+    max-width: 300px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.search-bar__input {
+    padding: 0.5em;
+    margin: 0 10px 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+
+.search-bar__input:focus-visible {
+    outline: 0;
+}
 
 .search-bar {
   display: flex;
@@ -62,49 +81,61 @@
   font-size: 1rem;
 }
 
+.movie-catalog__actions {
+  position: relative;
+  display: flex;
+  flex-direction: row !important;
+  margin-top: auto;
+  align-self: center !important;
+
+}
+
 .movie-catalog__rent-btn {
   margin-top: 0.5rem;
   padding: 0.5rem 1rem;
-  background: #1976d2;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
+  background: #ffffff;
+  color: #3F3636;
+  border: 2px solid #3F3636;
+  border-radius: .5rem;
   cursor: pointer;
   font-weight: bold;
   transition: background 0.2s;
 }
 .movie-catalog__rent-btn:hover {
-  background: #125ea2;
+  background: #D9D2D2;
+  border: 2px solid #3F3636;
 }
 
 .movie-catalog__buy-btn {
   margin-top: 0.5rem;
   margin-left: 0.5rem;
   padding: 0.5rem 1rem;
-  background: #ffb200;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
+  background: #ffffff;
+  color: #3F3636;
+  border: 2px solid #3F3636;
+  border-radius: .5rem;
   cursor: pointer;
   font-weight: bold;
   transition: background 0.2s;
 }
 .movie-catalog__buy-btn:hover {
-  background: #c97a00;
+  background: #D9D2D2;
+  border: 2px solid #3F3636;
 }
 
 .movie-catalog__trailer-btn {
   margin-top: 0.5rem;
   margin-left: 0.5rem;
   padding: 0.5rem 1rem;
-  background: #1746a2;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
+  background: #ffffff;
+  color: #3F3636;
+  border: 2px solid #3F3636;
+  border-radius: .5rem;
   cursor: pointer;
   font-weight: bold;
   transition: background 0.2s;
 }
 .movie-catalog__trailer-btn:hover {
-  background: #102c5a;
+  background: #D9D2D2;
+  border: 2px solid #3F3636;
 }

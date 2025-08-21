@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import "./PurchaseList.css";
+import { toast } from 'react-toastify';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
 function PurchaseList() {
   const [cart, setCart] = useState([]);
@@ -31,6 +34,7 @@ function PurchaseList() {
   const handleRemove = (id) => {
     const newCart = cart.filter((item) => item.id !== id);
     updateCart(newCart);
+    toast.error("Producto eliminado de alquileres");
   };
 
   // Calcula el total
@@ -75,13 +79,13 @@ function PurchaseList() {
                     </button>
                   </div>
                   <p className="purchase-list__price">
-                    Precio: ${movie.price} x {movie.quantity} = ${movie.price * movie.quantity}
+                    Precio: ${movie.price} USD x {movie.quantity} = ${movie.price * movie.quantity} USD
                   </p>
                   <button
                     className="purchase-list__remove-btn"
                     onClick={() => handleRemove(movie.id)}
                   >
-                    Quitar
+                    <FontAwesomeIcon icon={faTrashAlt} />
                   </button>
                 </div>
               </div>
@@ -92,7 +96,7 @@ function PurchaseList() {
               <strong>Total de películas:</strong> {totalItems}
             </p>
             <p>
-              <strong>Total a pagar:</strong> ${total}
+              <strong>Total a pagar:</strong> ${total} USD
             </p>
             <button
               className="purchase-list__checkout-btn"
